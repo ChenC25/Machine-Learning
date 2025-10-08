@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Price Prediction</title>
+</head>
+<body>
+    <div>
+        <h2>Car Price Prediction</h2>
+        <form action="/predict" method="post">
+            <label for="VRMILEAGE">Mileage:</label>
+            <input type="text" id="VRMILEAGE" name="VRMILEAGE"><br><br>
+            <label for="Vehicle_year">Year:</label>
+            <input type="text" id="Vehicle_year" name="Vehicle_year"><br><br>
+            <label for="Vehicle_cylinders">Cylinders:</label>
+            <input type="text" id="Vehicle_cylinders" name="Vehicle_cylinders"><br><br>
+            <label for="Vehicle_doors">Doors:</label>
+            <input type="text" id="Vehicle_doors" name="Vehicle_doors"><br><br>
+            <label for="Vehicle_engine">Engine:</label>
+            <input type="text" id="Vehicle_engine" name="Vehicle_engine"><br><br>
+            <label for="Vehicle_MMR">MMR:</label>
+            <input type="text" id="Vehicle_MMR" name="Vehicle_MMR"><br><br>
+            <label for="Vehicle_condition_overall">Condition Overall:</label>
+            <input type="text" id="Vehicle_condition_overall" name="Vehicle_condition_overall"><br><br>
+            <label for="Vehicle_condition_grade_1">Condition Grade 1:</label>
+            <input type="text" id="Vehicle_condition_grade_1" name="Vehicle_condition_grade_1"><br><br>
+            <label for="Vehicle_condition_grade_2">Condition Grade 2:</label>
+            <input type="text" id="Vehicle_condition_grade_2" name="Vehicle_condition_grade_2"><br><br>
+            <input type="submit" value="Predict">
+        </form>
+        <h3>{{ prediction_text }}</h3>
+    </div>
+</body>
+</html>

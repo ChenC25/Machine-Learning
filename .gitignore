@@ -1,0 +1,39 @@
+﻿# Python / Jupyter
+__pycache__/
+.ipynb_checkpoints/
+*.pyc
+
+# Virtual env & secrets
+.venv/
+venv/
+env/
+.env
+
+# Data & binaries
+*.xlsx
+*.xls
+*.csv
+*.bak
+*.yxmd
+*.docx
+*.zip
+*.7z
+*.gz
+*.pkl
+*.joblib
+*.onnx
+*.h5
+*.pt
+*.pth
+
+# Folders to ignore
+catboost_info/
+"pkl files"/
+"Test files"/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+Github/Token.txt
