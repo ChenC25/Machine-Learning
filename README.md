@@ -1,10 +1,4 @@
 AAA Vehicle Price Prediction
-https://img.shields.io/badge/Python-3.x-blue
-https://img.shields.io/badge/Notebook-Jupyter-orange
-https://img.shields.io/badge/Machine%20Learning-Regression-green
-https://img.shields.io/badge/Model-XGBoost-red
-https://img.shields.io/badge/Model-CatBoost-yellow
-https://img.shields.io/badge/Model-LightGBM-brightgreen
 An end-to-end machine learning project for predicting vehicle sale prices using large-scale automotive transaction data, with a focus on feature engineering, ensemble modeling, calibration, and deployment-ready inference workflows. 
 
 
