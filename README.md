@@ -1,162 +1,226 @@
-AAA Vehicle Price Prediction
-An end-to-end machine learning project for predicting vehicle sale prices using large-scale automotive transaction data, with a focus on feature engineering, ensemble modeling, calibration, and deployment-ready inference workflows. 
+<div align="center">
 
+# 🚗 AAA Vehicle Price Prediction
 
-Table of Contents
+### End-to-End Machine Learning Pipeline for Vehicle Sale Price Forecasting
 
-#project-overview
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3.x-blue?style=for-the-badge&logo=python" />
+  <img src="https://img.shields.io/badge/Jupyter-Notebook-orange?style=for-the-badge&logo=jupyter" />
+  <img src="https://img.shields.io/badge/Machine%20Learning-Regression-green?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/XGBoost-Model-red?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/CatBoost-Model-yellow?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/LightGBM-Model-brightgreen?style=for-the-badge" />
+</p>
 
-#business-problem
+<p align="center">
+  A large-scale machine learning project for predicting vehicle sale prices using advanced feature engineering, ensemble learning, and deployment-ready inference workflows.
+</p>
 
-#dataset
+</div>
 
-#project-highlights
+---
 
-#workflow
+## 📌 Overview
 
-#models-used
+This project builds an end-to-end machine learning pipeline to predict vehicle sale prices (`VRSALEAMT`) using large-scale automotive transaction data.  
+It covers the full workflow from **data cleaning** and **feature engineering** to **model training**, **evaluation**, **stacking**, **calibration**, and **prediction export**.
 
-#results
+The final solution combines multiple gradient boosting models and ensemble techniques to achieve strong predictive performance on both time-based holdout data and external customer data.
 
-#tech-stack
+---
 
-#project-outputs
+## 🎯 Business Problem
 
-#why-this-project-matters
+Vehicle pricing depends on many interacting factors such as:
 
-#future-improvements
+- mileage  
+- vehicle age  
+- trim / series  
+- drivetrain / engine specs  
+- market segment  
+- location  
+- sale timing  
+- overall vehicle condition  
 
+The goal of this project is to generate a reliable model that can estimate vehicle sale prices more accurately than baseline pricing methods.
 
-Project Overview
-This project predicts vehicle sale prices (VRSALEAMT) from structured vehicle, auction, and temporal features such as mileage, vehicle year, trim, drivetrain, engine information, condition, market segment, and sale timing. The notebook covers the full machine learning lifecycle: data exploration, cleaning, feature engineering, model development, evaluation, stacking, calibration, and export for production-style inference. 
-Unlike small benchmark projects, this work is built on a large real-world dataset with 4,657,927 rows and 34 columns, making it a strong example of scalable tabular machine learning. 
+---
 
-Business Problem
-Vehicle pricing is influenced by many interacting factors, including age, mileage, condition, trim, market segment, and sale timing. The goal of this project is to estimate vehicle sale price accurately and consistently, supporting pricing analysis and downstream business decisions with a more data-driven alternative to simple heuristics or group averages. 
+## 📊 Dataset
 
-Dataset
-Training data
+### Training Data
+- `Customer Database.parquet`
 
-Customer Database.parquet 
+### External / Held-Out Data
+- `Test Customer Data.xlsx`
 
-External / held-out data
+### Target Variable
+- `VRSALEAMT`
 
-Test Customer Data.xlsx 
+### Scale
+- **4.6M+ rows**
+- **34 original columns**
+- Rich mix of numerical and categorical automotive attributes
 
-Target
+---
 
-VRSALEAMT (vehicle sale amount) 
+## ✨ Project Highlights
 
-Selected feature groups
+- Built an end-to-end regression pipeline on **millions of records**
+- Engineered domain-driven features such as:
+  - `vehicle_age`
+  - `mileage_per_year`
+  - `log_mileage`
+  - `log_age`
+  - `drivable_flag`
+  - `GVWR_class`
+- Applied **target encoding** for high-cardinality variables:
+  - `Model`
+  - `Trim`
+  - `Series`
+  - `EngineModel`
+- Trained and compared:
+  - **XGBoost**
+  - **CatBoost**
+  - **LightGBM**
+  - **Stacked ensemble models**
+- Used **time-based train / validation / test split** to reduce leakage
+- Improved final output with:
+  - **blending**
+  - **isotonic regression calibration**
+- Exported reusable **model bundles** and final **prediction files**
 
-Vehicle attributes: mileage, year, cylinders, doors, engine size, horsepower, base price, body class, drive type, fuel type, make, model, trim, series, and engine-related fields. 
-Temporal fields: sale date, week of year, month, quarter, year, and engineered timing-based features. 
-Market and auction context: region, location, EV-related attributes, market segment, and vehicle condition variables. 
+---
 
+## 🛠️ Workflow
 
-Project Highlights
+### 1. Data Understanding & Exploration
+- Inspected schema, data types, and missing values
+- Explored correlations between pricing-related features
+- Visualized distributions and outliers
 
-Built an end-to-end regression pipeline for vehicle price prediction on 4.6M+ historical records. 
-Engineered business-relevant features including vehicle age, mileage per year, log mileage, log age, drivable flag, and GVWR class. 
-Combined one-hot encoding and leakage-safe target encoding for mixed-cardinality categorical variables. 
-Trained and compared XGBoost, CatBoost, LightGBM, and stacked ensemble models. 
-Applied time-based train/validation/test splitting to better simulate real-world deployment conditions. 
-Improved final prediction quality using blending and isotonic calibration. 
-Exported reusable model bundles and Excel predictions for downstream use. 
+### 2. Data Cleaning
+- Parsed and standardized sale date fields
+- Converted raw columns into usable numerical types
+- Cleaned condition-related and engine-related values
+- Clipped extreme mileage values and corrected invalid inputs
 
+### 3. Feature Engineering
+Created new predictive variables such as:
+- **Vehicle Age**
+- **Mileage Per Year**
+- **Log Mileage**
+- **Log Age**
+- **Drivable Flag**
+- **GVWR Class**
 
-Workflow
-1. Data Understanding & Exploration
-The project begins with exploratory analysis, data-type inspection, correlation analysis, missing-value review, and feature distribution checks to understand which variables influence vehicle pricing. 
-2. Data Cleaning
-Raw fields are standardized through numeric coercion, date parsing, condition cleanup, and mileage hygiene rules such as clipping extreme outliers and correcting invalid values. 
-3. Feature Engineering
-Several domain-informed features are created to improve predictive power, including:
+### 4. Encoding Strategy
+- **One-Hot Encoding** for lower-cardinality categorical variables
+- **Leakage-safe Target Encoding** for high-cardinality categorical variables
 
-vehicle_age 
-mileage_per_year 
-log_mileage and log_age 
-drivable_flag 
-GVWR_class extracted from raw vehicle weight descriptions 
+### 5. Model Training
+Developed and evaluated multiple regression approaches:
+- **XGBoost Regressor**
+- **CatBoost Regressor**
+- **LightGBM Regressor**
+- **Stacking Regressor with Ridge meta-model**
 
-4. Categorical Encoding
-Low-cardinality categorical variables are one-hot encoded, while high-cardinality variables such as Model, Trim, Series, and EngineModel are transformed using leakage-safe target encoding. 
-5. Time-Based Splitting
-The model uses chronological train/validation/test windows to reduce leakage and better reflect how the model would perform on future data. One reported split uses:
+### 6. Ensembling & Calibration
+- Combined model outputs using **non-negative least squares**
+- Applied **isotonic regression** to calibrate final predictions
 
-Train: 2019-01-02 to 2025-06-27 
-Validation: 2025-06-28 to 2025-10-14 
-Test: 2025-10-15 to 2026-02-12 
+### 7. Export & Deployment
+- Saved reusable inference bundles with preprocessing + models
+- Exported final predictions to Excel for downstream use
 
-6. Model Training
-The project develops multiple regression pipelines using:
+---
 
-XGBoost 
-CatBoost 
-LightGBM 
-StackingRegressor with a Ridge meta-model 
+## 🤖 Models Used
 
-7. Blending & Calibration
-The final solution blends predictions using non-negative least squares and calibrates the final output with isotonic regression for better reliability. 
+### XGBoost
+A strong tree-based boosting model used as one of the primary high-performing regressors.
 
-Models Used
+### CatBoost
+Used for handling structured tabular data with many categorical variables.
 
-XGBoost Regressor for strong baseline boosted-tree performance on structured data. 
-CatBoost Regressor for handling categorical-heavy tabular patterns effectively. 
-LightGBM Regressor as part of the final blended solution. 
-Stacked Ensemble combining CatBoost and XGBoost with a Ridge meta-learner. 
-Log-target transformation to improve modeling stability on skewed price distributions. 
+### LightGBM
+Integrated into the final blended solution for additional predictive signal.
 
+### Stacked Ensemble
+Combined **CatBoost + XGBoost** with a **Ridge meta-model** for improved generalization.
 
-Results
-Time-Based Holdout Test Set
-Final model performance on the test set:
+### Calibration
+Used **Isotonic Regression** to improve final prediction reliability.
 
-Stack + LGBM + Isotonic: R² = 0.9456, MAE = 1508, RMSE = 2805, MAPE = 29.59% 
-XGBoost tuned: R² = 0.9436, MAE = 1514, RMSE = 2858, MAPE = 29.22% 
-CatBoost native: R² = 0.9334, MAE = 1600, RMSE = 3105, MAPE = 29.19% 
+---
 
-Compared with the strongest baseline, the final model improved RMSE by approximately 77.2%, demonstrating the value of advanced feature engineering and ensemble modeling for real-world pricing prediction. 
-External Held-Out Customer Set
-External evaluation results:
+## 📈 Results
 
-Stack + LGBM blend: R² = 0.9096, MAE = 1356, RMSE = 2517, MAPE = 34.82% 
-XGBoost: R² = 0.9083, MAE = 1364, RMSE = 2536, MAPE = 34.48% 
-CatBoost (pipeline): R² = 0.8908, MAE = 1488, RMSE = 2767, MAPE = 35.43% 
+### Time-Based Holdout Test Set
 
+#### Final Best Model: Stack + LGBM + Isotonic
+- **R²:** `0.9456`
+- **MAE:** `1,508`
+- **RMSE:** `2,805`
+- **MAPE:** `29.59%`
 
-Tech Stack
+#### XGBoost Tuned
+- **R²:** `0.9436`
+- **MAE:** `1,514`
+- **RMSE:** `2,858`
 
-Python 
-pandas, numpy 
-scikit-learn 
-XGBoost 
-CatBoost 
-LightGBM 
-matplotlib, seaborn 
-joblib for model serialization 
+#### CatBoost Native
+- **R²:** `0.9334`
+- **MAE:** `1,600`
+- **RMSE:** `3,105`
 
+✅ Final model improved RMSE by approximately **77.2%** over the best baseline.
 
-Project Outputs
-The notebook exports reusable artifacts and predictions, including:
+---
 
-xgb_vehicle_price_bundle.joblib 
-stack_lgbm_iso_bundle.joblib 
-AAA Test.xlsx with prediction outputs for external data 
+### External Held-Out Customer Set
 
+#### Stack + LGBM Blend
+- **R²:** `0.9096`
+- **MAE:** `1,356`
+- **RMSE:** `2,517`
 
-Why This Project Matters
-This project demonstrates more than model training alone. It reflects practical machine learning work on real-world structured data: large-scale preprocessing, feature engineering, leakage prevention, model comparison, stacking, calibration, and deployment-oriented packaging. It is a strong portfolio example because it shows both analytical thinking and implementation depth across the full ML workflow. 
+#### XGBoost
+- **R²:** `0.9083`
+- **MAE:** `1,364`
+- **RMSE:** `2,536`
 
-Future Improvements
-Potential next steps include:
+#### CatBoost Pipeline
+- **R²:** `0.8908`
+- **MAE:** `1,488`
+- **RMSE:** `2,767`
 
-adding model explainability with SHAP or feature-importance dashboards,
-refactoring the notebook into modular Python scripts,
-building an inference API for real-time scoring,
-and adding experiment tracking for reproducibility and model comparison.
+---
 
-These are natural extensions of the current notebook workflow and exported model-bundle design. 
+## 🧰 Tech Stack
 
-Recruiter-Friendly One-Paragraph Summary
-Built an end-to-end vehicle price prediction pipeline on 4.6M+ automotive records using advanced feature engineering, leakage-safe target encoding, XGBoost/CatBoost/LightGBM, stacked ensemble learning, blending, and isotonic calibration. Achieved approximately 0.946 R² on a time-based holdout set and improved RMSE by roughly 77% over baseline approaches, while packaging the final solution into reusable model bundles for production-style inference.
+- **Python**
+- **pandas**
+- **numpy**
+- **scikit-learn**
+- **XGBoost**
+- **CatBoost**
+- **LightGBM**
+- **matplotlib**
+- **seaborn**
+- **joblib**
+
+---
+
+## 📂 Project Structure
+
+```bash
+.
+├── AAA Data Price Prediction.ipynb
+├── Customer Database.parquet
+├── Test Customer Data.xlsx
+├── AAA Test.xlsx
+├── xgb_vehicle_price_bundle.joblib
+├── stack_lgbm_iso_bundle.joblib
+└── README.md
