@@ -5,15 +5,25 @@ An end-to-end machine learning project for predicting vehicle sale prices using 
 Table of Contents
 
 #project-overview
+
 #business-problem
+
 #dataset
+
 #project-highlights
+
 #workflow
+
 #models-used
+
 #results
+
 #tech-stack
+
 #project-outputs
+
 #why-this-project-matters
+
 #future-improvements
 
 
