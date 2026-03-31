@@ -1,0 +1,112 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2025.2" RunE2="T">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="JupyterCode">
+        <Position x="54" y="78" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <WorkflowName>c:\users\chenchen\onedrive - america's auto auction\documents - finance\fp&amp;a\data analytics\development\chens_sandbox\machine learning\prediction_final\python-package_details.yxmd</WorkflowName>
+          <JupyterProduction>false</JupyterProduction>
+          <vEnvName>designerbasetools_venv</vEnvName>
+          <DefaultVenv>1</DefaultVenv>
+          <productionModeScript />
+          <Port>62860</Port>
+          <JupyterGuidDir>4f2288204898592b9a489194cdfc3872</JupyterGuidDir>
+          <JupyterGuidCopy />
+          <LastExecutedByEngineVersion>2025.2.1.85</LastExecutedByEngineVersion>
+          <Notebook><![CDATA[{"cells":[{"metadata":{"ayx":{"cell_class":"text_cell","cell_css":"border: 3px solid #357; margin: 4px; background: #fbffff","cell_type":"markdown","contents_keyword":"Alteryx.help()","first_line":"Run `Alteryx.help()` for info about useful functions.","label":"info"}},"cell_type":"markdown","source":["Run `Alteryx.help()` for info about useful functions.  \n","i.e., `Alteryx.read(\"#1\")`, `Alteryx.write(df,1)`, `Alteryx.getWorkflowConstant(\"Engine.WorkflowDirectory\")`"]},{"metadata":{"execution":{"iopub.execute_input":"2026-03-10T19:18:41.740767Z","iopub.status.busy":"2026-03-10T19:18:41.740767Z","iopub.status.idle":"2026-03-10T19:18:41.752185Z","shell.execute_reply":"2026-03-10T19:18:41.752185Z"}},"cell_type":"code","source":["import sys\n","print(sys.executable)"],"execution_count":1,"outputs":[]},{"metadata":{"execution":{"iopub.execute_input":"2026-03-10T19:18:41.778167Z","iopub.status.busy":"2026-03-10T19:18:41.778167Z","iopub.status.idle":"2026-03-10T19:18:43.205893Z","shell.execute_reply":"2026-03-10T19:18:43.204687Z"}},"cell_type":"code","source":["from ayx import Alteryx\n","import re\n","from pandas import DataFrame\n","import io\n","from contextlib import redirect_stdout\n","\n","with io.StringIO() as current_output, redirect_stdout(current_output):\n","    \n","    Alteryx.installPackages(package='',install_type='freeze')\n"," \n","    packages = ( (item for item in out_row.split(\"=\") if item) \n","    for out_row in re.split(string=current_output.getvalue(),pattern=r\"\\r*\\n\") if out_row)\n","    \n","    output_df = DataFrame(packages ,columns=[\"package\",\"version\"])\n","\n","Alteryx.write(output_df,1)"],"execution_count":2,"outputs":[]},{"metadata":{"execution":{"iopub.execute_input":"2026-03-10T19:18:43.205893Z","iopub.status.busy":"2026-03-10T19:18:43.205893Z","iopub.status.idle":"2026-03-10T19:20:01.300389Z","shell.execute_reply":"2026-03-10T19:20:01.299144Z"}},"cell_type":"code","source":["from ayx import Package\n","Package.installPackages([\n","    'xgboost',\n","    'catboost',\n","    'lightgbm',\n","    'scikit-learn',\n","    'joblib',\n","    'numpy',\n","    'pandas'\n","])"],"execution_count":3,"outputs":[]}],"metadata":{"kernelspec":{"name":"designerbasetools_venv","display_name":"designerbasetools_venv","language":"python"},"language_info":{"name":"python","version":"3.10.18","mimetype":"text/x-python","codemirror_mode":{"name":"ipython","version":3},"pygments_lexer":"ipython3","nbconvert_exporter":"python","file_extension":".py"}},"nbformat":4,"nbformat_minor":4}]]></Notebook>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxJupyterPluginEngine.dll" EngineDllEntryPoint="AlteryxJupyter" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="210" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\ChenChen\AppData\Local\Temp\Engine_9384_104f499df2064fceae0e92e64fcb505b_\Engine_9384_b05d74e8639840e285674aa5450f0817~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output1" />
+      <Destination ToolID="2" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <DefaultTZ value="Local" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <IsTemplate value="False" />
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>Python-Package_Details</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="dbb617b3-2725-4001-a776-f4a54ba78042" />
+      <Telemetry>
+        <PreviousWorkflowId value="43c8f34d-0cab-4696-b921-73536d92a020" />
+        <OriginWorkflowId value="43c8f34d-0cab-4696-b921-73536d92a020" />
+      </Telemetry>
+      <PlatformWorkflowId value="" />
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>

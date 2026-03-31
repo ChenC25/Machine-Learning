@@ -1,0 +1,259 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2025.1" RunE2="T">
+  <Nodes>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="162" y="330" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File>C:\Users\ChenChen\OneDrive - America's Auto Auction\Documents - Finance\FP&amp;A\Data Analytics\Development\Chens_Sandbox\Body Style, Segment, Classification\vin_decoded.csv</File>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>vin_decoded.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="VIN" size="254" source="File: C:\Users\ChenChen\OneDrive - America's Auto Auction\Documents - Finance\FP&amp;A\Data Analytics\Development\Chens_Sandbox\Body Style, Segment, Classification\vin_decoded.csv" type="V_String" />
+            <Field name="Make" size="254" source="File: C:\Users\ChenChen\OneDrive - America's Auto Auction\Documents - Finance\FP&amp;A\Data Analytics\Development\Chens_Sandbox\Body Style, Segment, Classification\vin_decoded.csv" type="V_String" />
+            <Field name="Model" size="254" source="File: C:\Users\ChenChen\OneDrive - America's Auto Auction\Documents - Finance\FP&amp;A\Data Analytics\Development\Chens_Sandbox\Body Style, Segment, Classification\vin_decoded.csv" type="V_String" />
+            <Field name="ModelYear" size="254" source="File: C:\Users\ChenChen\OneDrive - America's Auto Auction\Documents - Finance\FP&amp;A\Data Analytics\Development\Chens_Sandbox\Body Style, Segment, Classification\vin_decoded.csv" type="V_String" />
+            <Field name="Trim" size="254" source="File: C:\Users\ChenChen\OneDrive - America's Auto Auction\Documents - Finance\FP&amp;A\Data Analytics\Development\Chens_Sandbox\Body Style, Segment, Classification\vin_decoded.csv" type="V_String" />
+            <Field name="Series" size="254" source="File: C:\Users\ChenChen\OneDrive - America's Auto Auction\Documents - Finance\FP&amp;A\Data Analytics\Development\Chens_Sandbox\Body Style, Segment, Classification\vin_decoded.csv" type="V_String" />
+            <Field name="Series2" size="254" source="File: C:\Users\ChenChen\OneDrive - America's Auto Auction\Documents - Finance\FP&amp;A\Data Analytics\Development\Chens_Sandbox\Body Style, Segment, Classification\vin_decoded.csv" type="V_String" />
+            <Field name="VehicleType" size="254" source="File: C:\Users\ChenChen\OneDrive - America's Auto Auction\Documents - Finance\FP&amp;A\Data Analytics\Development\Chens_Sandbox\Body Style, Segment, Classification\vin_decoded.csv" type="V_String" />
+            <Field name="BodyClass" size="254" source="File: C:\Users\ChenChen\OneDrive - America's Auto Auction\Documents - Finance\FP&amp;A\Data Analytics\Development\Chens_Sandbox\Body Style, Segment, Classification\vin_decoded.csv" type="V_String" />
+            <Field name="DriveType" size="254" source="File: C:\Users\ChenChen\OneDrive - America's Auto Auction\Documents - Finance\FP&amp;A\Data Analytics\Development\Chens_Sandbox\Body Style, Segment, Classification\vin_decoded.csv" type="V_String" />
+            <Field name="TransmissionStyle" size="254" source="File: C:\Users\ChenChen\OneDrive - America's Auto Auction\Documents - Finance\FP&amp;A\Data Analytics\Development\Chens_Sandbox\Body Style, Segment, Classification\vin_decoded.csv" type="V_String" />
+            <Field name="TransmissionSpeeds" size="254" source="File: C:\Users\ChenChen\OneDrive - America's Auto Auction\Documents - Finance\FP&amp;A\Data Analytics\Development\Chens_Sandbox\Body Style, Segment, Classification\vin_decoded.csv" type="V_String" />
+            <Field name="EngineCylinders" size="254" source="File: C:\Users\ChenChen\OneDrive - America's Auto Auction\Documents - Finance\FP&amp;A\Data Analytics\Development\Chens_Sandbox\Body Style, Segment, Classification\vin_decoded.csv" type="V_String" />
+            <Field name="DisplacementL" size="254" source="File: C:\Users\ChenChen\OneDrive - America's Auto Auction\Documents - Finance\FP&amp;A\Data Analytics\Development\Chens_Sandbox\Body Style, Segment, Classification\vin_decoded.csv" type="V_String" />
+            <Field name="DisplacementCC" size="254" source="File: C:\Users\ChenChen\OneDrive - America's Auto Auction\Documents - Finance\FP&amp;A\Data Analytics\Development\Chens_Sandbox\Body Style, Segment, Classification\vin_decoded.csv" type="V_String" />
+            <Field name="EngineHP" size="254" source="File: C:\Users\ChenChen\OneDrive - America's Auto Auction\Documents - Finance\FP&amp;A\Data Analytics\Development\Chens_Sandbox\Body Style, Segment, Classification\vin_decoded.csv" type="V_String" />
+            <Field name="FuelTypePrimary" size="254" source="File: C:\Users\ChenChen\OneDrive - America's Auto Auction\Documents - Finance\FP&amp;A\Data Analytics\Development\Chens_Sandbox\Body Style, Segment, Classification\vin_decoded.csv" type="V_String" />
+            <Field name="FuelTypeSecondary" size="254" source="File: C:\Users\ChenChen\OneDrive - America's Auto Auction\Documents - Finance\FP&amp;A\Data Analytics\Development\Chens_Sandbox\Body Style, Segment, Classification\vin_decoded.csv" type="V_String" />
+            <Field name="Turbo" size="254" source="File: C:\Users\ChenChen\OneDrive - America's Auto Auction\Documents - Finance\FP&amp;A\Data Analytics\Development\Chens_Sandbox\Body Style, Segment, Classification\vin_decoded.csv" type="V_String" />
+            <Field name="Supercharger" size="254" source="File: C:\Users\ChenChen\OneDrive - America's Auto Auction\Documents - Finance\FP&amp;A\Data Analytics\Development\Chens_Sandbox\Body Style, Segment, Classification\vin_decoded.csv" type="V_String" />
+            <Field name="ValveTrainDesign" size="254" source="File: C:\Users\ChenChen\OneDrive - America's Auto Auction\Documents - Finance\FP&amp;A\Data Analytics\Development\Chens_Sandbox\Body Style, Segment, Classification\vin_decoded.csv" type="V_String" />
+            <Field name="EngineConfiguration" size="254" source="File: C:\Users\ChenChen\OneDrive - America's Auto Auction\Documents - Finance\FP&amp;A\Data Analytics\Development\Chens_Sandbox\Body Style, Segment, Classification\vin_decoded.csv" type="V_String" />
+            <Field name="EngineModel" size="254" source="File: C:\Users\ChenChen\OneDrive - America's Auto Auction\Documents - Finance\FP&amp;A\Data Analytics\Development\Chens_Sandbox\Body Style, Segment, Classification\vin_decoded.csv" type="V_String" />
+            <Field name="OtherEngineInfo" size="254" source="File: C:\Users\ChenChen\OneDrive - America's Auto Auction\Documents - Finance\FP&amp;A\Data Analytics\Development\Chens_Sandbox\Body Style, Segment, Classification\vin_decoded.csv" type="V_String" />
+            <Field name="ElectrificationLevel" size="254" source="File: C:\Users\ChenChen\OneDrive - America's Auto Auction\Documents - Finance\FP&amp;A\Data Analytics\Development\Chens_Sandbox\Body Style, Segment, Classification\vin_decoded.csv" type="V_String" />
+            <Field name="BatteryEnergyKWhFrom" size="254" source="File: C:\Users\ChenChen\OneDrive - America's Auto Auction\Documents - Finance\FP&amp;A\Data Analytics\Development\Chens_Sandbox\Body Style, Segment, Classification\vin_decoded.csv" type="V_String" />
+            <Field name="BatteryEnergyKWhTo" size="254" source="File: C:\Users\ChenChen\OneDrive - America's Auto Auction\Documents - Finance\FP&amp;A\Data Analytics\Development\Chens_Sandbox\Body Style, Segment, Classification\vin_decoded.csv" type="V_String" />
+            <Field name="ChargerLevel" size="254" source="File: C:\Users\ChenChen\OneDrive - America's Auto Auction\Documents - Finance\FP&amp;A\Data Analytics\Development\Chens_Sandbox\Body Style, Segment, Classification\vin_decoded.csv" type="V_String" />
+            <Field name="EVDriveUnit" size="254" source="File: C:\Users\ChenChen\OneDrive - America's Auto Auction\Documents - Finance\FP&amp;A\Data Analytics\Development\Chens_Sandbox\Body Style, Segment, Classification\vin_decoded.csv" type="V_String" />
+            <Field name="Doors" size="254" source="File: C:\Users\ChenChen\OneDrive - America's Auto Auction\Documents - Finance\FP&amp;A\Data Analytics\Development\Chens_Sandbox\Body Style, Segment, Classification\vin_decoded.csv" type="V_String" />
+            <Field name="Seats" size="254" source="File: C:\Users\ChenChen\OneDrive - America's Auto Auction\Documents - Finance\FP&amp;A\Data Analytics\Development\Chens_Sandbox\Body Style, Segment, Classification\vin_decoded.csv" type="V_String" />
+            <Field name="SeatRows" size="254" source="File: C:\Users\ChenChen\OneDrive - America's Auto Auction\Documents - Finance\FP&amp;A\Data Analytics\Development\Chens_Sandbox\Body Style, Segment, Classification\vin_decoded.csv" type="V_String" />
+            <Field name="KeylessIgnition" size="254" source="File: C:\Users\ChenChen\OneDrive - America's Auto Auction\Documents - Finance\FP&amp;A\Data Analytics\Development\Chens_Sandbox\Body Style, Segment, Classification\vin_decoded.csv" type="V_String" />
+            <Field name="EntertainmentSystem" size="254" source="File: C:\Users\ChenChen\OneDrive - America's Auto Auction\Documents - Finance\FP&amp;A\Data Analytics\Development\Chens_Sandbox\Body Style, Segment, Classification\vin_decoded.csv" type="V_String" />
+            <Field name="HeadlampLightSource" size="254" source="File: C:\Users\ChenChen\OneDrive - America's Auto Auction\Documents - Finance\FP&amp;A\Data Analytics\Development\Chens_Sandbox\Body Style, Segment, Classification\vin_decoded.csv" type="V_String" />
+            <Field name="ABS" size="254" source="File: C:\Users\ChenChen\OneDrive - America's Auto Auction\Documents - Finance\FP&amp;A\Data Analytics\Development\Chens_Sandbox\Body Style, Segment, Classification\vin_decoded.csv" type="V_String" />
+            <Field name="ESC" size="254" source="File: C:\Users\ChenChen\OneDrive - America's Auto Auction\Documents - Finance\FP&amp;A\Data Analytics\Development\Chens_Sandbox\Body Style, Segment, Classification\vin_decoded.csv" type="V_String" />
+            <Field name="TractionControl" size="254" source="File: C:\Users\ChenChen\OneDrive - America's Auto Auction\Documents - Finance\FP&amp;A\Data Analytics\Development\Chens_Sandbox\Body Style, Segment, Classification\vin_decoded.csv" type="V_String" />
+            <Field name="TPMSType" size="254" source="File: C:\Users\ChenChen\OneDrive - America's Auto Auction\Documents - Finance\FP&amp;A\Data Analytics\Development\Chens_Sandbox\Body Style, Segment, Classification\vin_decoded.csv" type="V_String" />
+            <Field name="BackupCamera" size="254" source="File: C:\Users\ChenChen\OneDrive - America's Auto Auction\Documents - Finance\FP&amp;A\Data Analytics\Development\Chens_Sandbox\Body Style, Segment, Classification\vin_decoded.csv" type="V_String" />
+            <Field name="ParkingAssist" size="254" source="File: C:\Users\ChenChen\OneDrive - America's Auto Auction\Documents - Finance\FP&amp;A\Data Analytics\Development\Chens_Sandbox\Body Style, Segment, Classification\vin_decoded.csv" type="V_String" />
+            <Field name="RearCrossTrafficAlert" size="254" source="File: C:\Users\ChenChen\OneDrive - America's Auto Auction\Documents - Finance\FP&amp;A\Data Analytics\Development\Chens_Sandbox\Body Style, Segment, Classification\vin_decoded.csv" type="V_String" />
+            <Field name="RearAEB" size="254" source="File: C:\Users\ChenChen\OneDrive - America's Auto Auction\Documents - Finance\FP&amp;A\Data Analytics\Development\Chens_Sandbox\Body Style, Segment, Classification\vin_decoded.csv" type="V_String" />
+            <Field name="FCW" size="254" source="File: C:\Users\ChenChen\OneDrive - America's Auto Auction\Documents - Finance\FP&amp;A\Data Analytics\Development\Chens_Sandbox\Body Style, Segment, Classification\vin_decoded.csv" type="V_String" />
+            <Field name="CIB" size="254" source="File: C:\Users\ChenChen\OneDrive - America's Auto Auction\Documents - Finance\FP&amp;A\Data Analytics\Development\Chens_Sandbox\Body Style, Segment, Classification\vin_decoded.csv" type="V_String" />
+            <Field name="DBS" size="254" source="File: C:\Users\ChenChen\OneDrive - America's Auto Auction\Documents - Finance\FP&amp;A\Data Analytics\Development\Chens_Sandbox\Body Style, Segment, Classification\vin_decoded.csv" type="V_String" />
+            <Field name="PAEB" size="254" source="File: C:\Users\ChenChen\OneDrive - America's Auto Auction\Documents - Finance\FP&amp;A\Data Analytics\Development\Chens_Sandbox\Body Style, Segment, Classification\vin_decoded.csv" type="V_String" />
+            <Field name="LDW" size="254" source="File: C:\Users\ChenChen\OneDrive - America's Auto Auction\Documents - Finance\FP&amp;A\Data Analytics\Development\Chens_Sandbox\Body Style, Segment, Classification\vin_decoded.csv" type="V_String" />
+            <Field name="LKA" size="254" source="File: C:\Users\ChenChen\OneDrive - America's Auto Auction\Documents - Finance\FP&amp;A\Data Analytics\Development\Chens_Sandbox\Body Style, Segment, Classification\vin_decoded.csv" type="V_String" />
+            <Field name="BSW" size="254" source="File: C:\Users\ChenChen\OneDrive - America's Auto Auction\Documents - Finance\FP&amp;A\Data Analytics\Development\Chens_Sandbox\Body Style, Segment, Classification\vin_decoded.csv" type="V_String" />
+            <Field name="BSI" size="254" source="File: C:\Users\ChenChen\OneDrive - America's Auto Auction\Documents - Finance\FP&amp;A\Data Analytics\Development\Chens_Sandbox\Body Style, Segment, Classification\vin_decoded.csv" type="V_String" />
+            <Field name="LaneCentering" size="254" source="File: C:\Users\ChenChen\OneDrive - America's Auto Auction\Documents - Finance\FP&amp;A\Data Analytics\Development\Chens_Sandbox\Body Style, Segment, Classification\vin_decoded.csv" type="V_String" />
+            <Field name="ADB" size="254" source="File: C:\Users\ChenChen\OneDrive - America's Auto Auction\Documents - Finance\FP&amp;A\Data Analytics\Development\Chens_Sandbox\Body Style, Segment, Classification\vin_decoded.csv" type="V_String" />
+            <Field name="DRL" size="254" source="File: C:\Users\ChenChen\OneDrive - America's Auto Auction\Documents - Finance\FP&amp;A\Data Analytics\Development\Chens_Sandbox\Body Style, Segment, Classification\vin_decoded.csv" type="V_String" />
+            <Field name="AutoHighBeam" size="254" source="File: C:\Users\ChenChen\OneDrive - America's Auto Auction\Documents - Finance\FP&amp;A\Data Analytics\Development\Chens_Sandbox\Body Style, Segment, Classification\vin_decoded.csv" type="V_String" />
+            <Field name="GVWRFrom" size="254" source="File: C:\Users\ChenChen\OneDrive - America's Auto Auction\Documents - Finance\FP&amp;A\Data Analytics\Development\Chens_Sandbox\Body Style, Segment, Classification\vin_decoded.csv" type="V_String" />
+            <Field name="GVWRTo" size="254" source="File: C:\Users\ChenChen\OneDrive - America's Auto Auction\Documents - Finance\FP&amp;A\Data Analytics\Development\Chens_Sandbox\Body Style, Segment, Classification\vin_decoded.csv" type="V_String" />
+            <Field name="GVWR" size="254" source="File: C:\Users\ChenChen\OneDrive - America's Auto Auction\Documents - Finance\FP&amp;A\Data Analytics\Development\Chens_Sandbox\Body Style, Segment, Classification\vin_decoded.csv" type="V_String" />
+            <Field name="WheelbaseInchesFrom" size="254" source="File: C:\Users\ChenChen\OneDrive - America's Auto Auction\Documents - Finance\FP&amp;A\Data Analytics\Development\Chens_Sandbox\Body Style, Segment, Classification\vin_decoded.csv" type="V_String" />
+            <Field name="WheelbaseInchesTo" size="254" source="File: C:\Users\ChenChen\OneDrive - America's Auto Auction\Documents - Finance\FP&amp;A\Data Analytics\Development\Chens_Sandbox\Body Style, Segment, Classification\vin_decoded.csv" type="V_String" />
+            <Field name="CurbWeightPounds" size="254" source="File: C:\Users\ChenChen\OneDrive - America's Auto Auction\Documents - Finance\FP&amp;A\Data Analytics\Development\Chens_Sandbox\Body Style, Segment, Classification\vin_decoded.csv" type="V_String" />
+            <Field name="WheelSizeFrontIn" size="254" source="File: C:\Users\ChenChen\OneDrive - America's Auto Auction\Documents - Finance\FP&amp;A\Data Analytics\Development\Chens_Sandbox\Body Style, Segment, Classification\vin_decoded.csv" type="V_String" />
+            <Field name="WheelSizeRearIn" size="254" source="File: C:\Users\ChenChen\OneDrive - America's Auto Auction\Documents - Finance\FP&amp;A\Data Analytics\Development\Chens_Sandbox\Body Style, Segment, Classification\vin_decoded.csv" type="V_String" />
+            <Field name="PlantCountry" size="254" source="File: C:\Users\ChenChen\OneDrive - America's Auto Auction\Documents - Finance\FP&amp;A\Data Analytics\Development\Chens_Sandbox\Body Style, Segment, Classification\vin_decoded.csv" type="V_String" />
+            <Field name="PlantState" size="254" source="File: C:\Users\ChenChen\OneDrive - America's Auto Auction\Documents - Finance\FP&amp;A\Data Analytics\Development\Chens_Sandbox\Body Style, Segment, Classification\vin_decoded.csv" type="V_String" />
+            <Field name="PlantCity" size="254" source="File: C:\Users\ChenChen\OneDrive - America's Auto Auction\Documents - Finance\FP&amp;A\Data Analytics\Development\Chens_Sandbox\Body Style, Segment, Classification\vin_decoded.csv" type="V_String" />
+            <Field name="ManufacturerName" size="254" source="File: C:\Users\ChenChen\OneDrive - America's Auto Auction\Documents - Finance\FP&amp;A\Data Analytics\Development\Chens_Sandbox\Body Style, Segment, Classification\vin_decoded.csv" type="V_String" />
+            <Field name="DestinationMarket" size="254" source="File: C:\Users\ChenChen\OneDrive - America's Auto Auction\Documents - Finance\FP&amp;A\Data Analytics\Development\Chens_Sandbox\Body Style, Segment, Classification\vin_decoded.csv" type="V_String" />
+            <Field name="BasePrice" size="254" source="File: C:\Users\ChenChen\OneDrive - America's Auto Auction\Documents - Finance\FP&amp;A\Data Analytics\Development\Chens_Sandbox\Body Style, Segment, Classification\vin_decoded.csv" type="V_String" />
+            <Field name="IsEV" size="254" source="File: C:\Users\ChenChen\OneDrive - America's Auto Auction\Documents - Finance\FP&amp;A\Data Analytics\Development\Chens_Sandbox\Body Style, Segment, Classification\vin_decoded.csv" type="V_String" />
+            <Field name="EVType" size="254" source="File: C:\Users\ChenChen\OneDrive - America's Auto Auction\Documents - Finance\FP&amp;A\Data Analytics\Development\Chens_Sandbox\Body Style, Segment, Classification\vin_decoded.csv" type="V_String" />
+            <Field name="MarketSegment" size="254" source="File: C:\Users\ChenChen\OneDrive - America's Auto Auction\Documents - Finance\FP&amp;A\Data Analytics\Development\Chens_Sandbox\Body Style, Segment, Classification\vin_decoded.csv" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Sample.Sample">
+        <Position x="318" y="330" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Skip</Mode>
+          <N>5000</N>
+          <GroupFields orderChanged="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Skip 1st 5000 rows</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSample" />
+    </Node>
+    <Node ToolID="7">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Sample.Sample">
+        <Position x="450" y="330" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Sample</Mode>
+          <N>1000</N>
+          <GroupFields orderChanged="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>1 of every 1000 rows</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSample" />
+    </Node>
+    <Node ToolID="8">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="618" y="462" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\ChenChen\AppData\Local\Temp\Engine_20944_d79a8f6d93bb4c6fa97c3cded430c9eb_\Engine_20944_66a3f17fdbce44e8bf84db8ee3344f12~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="9">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="606" y="330" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="25">C:\Users\ChenChen\OneDrive - America's Auto Auction\Documents - Finance\FP&amp;A\Data Analytics\Development\Chens_Sandbox\Machine Learning\VIN Decode Sample.xlsx|||Sheet1</File>
+          <Passwords />
+          <Disable>False</Disable>
+          <FormatSpecificOptions>
+            <MipTenantId />
+            <PreserveFormat>False</PreserveFormat>
+            <MipSensitivity />
+            <UNCLocal>False</UNCLocal>
+            <SkipFieldNames>False</SkipFieldNames>
+            <SuppressBlankFile>False</SuppressBlankFile>
+            <OutputOption>Create</OutputOption>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>VIN Decode Sample.xlsx
+Query=Sheet1</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="7" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="Output" />
+      <Destination ToolID="8" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="Output" />
+      <Destination ToolID="9" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <DefaultTZ value="Local" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <IsTemplate value="False" />
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>VIN Decode</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="75d17a62-de4a-4228-8862-faff34d70e65" />
+      <Telemetry>
+        <PreviousWorkflowId value="8b81a988-2582-4019-8462-19339f0fa16f" />
+        <OriginWorkflowId value="8b81a988-2582-4019-8462-19339f0fa16f" />
+      </Telemetry>
+      <PlatformWorkflowId value="" />
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
